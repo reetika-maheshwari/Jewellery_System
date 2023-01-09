@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
+--
+-- Host: localhost    Database: jewellary_managementdb
+-- ------------------------------------------------------
+-- Server version	5.7.9-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `et_sell`
+--
+
+DROP TABLE IF EXISTS `et_sell`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `et_sell` (
+  `Order_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Customer_Name` varchar(45) DEFAULT NULL,
+  `Contact_Number` varchar(45) DEFAULT NULL,
+  `Order_Date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Order_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `et_sell`
+--
+
+LOCK TABLES `et_sell` WRITE;
+/*!40000 ALTER TABLE `et_sell` DISABLE KEYS */;
+INSERT INTO `et_sell` VALUES (1,'Rohit','9765454675','2022-12-02 10:24:47'),(2,'Vivek Bindal','8755454766','2022-12-02 10:24:47'),(3,'Mr. Abhilash Sharma','9587357860','2022-12-02 10:25:41'),(4,'Puneet Sharma','8745545680','2022-12-02 10:37:35'),(5,'Vikram Kumar','9989756453','2022-12-02 11:04:17');
+/*!40000 ALTER TABLE `et_sell` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-01-09 12:28:37
